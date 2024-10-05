@@ -23,13 +23,13 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
 }
-nav{
+/* nav{
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     background-color:  #333333;
-}
+} */
 .lists a{
     color: white;
 }
