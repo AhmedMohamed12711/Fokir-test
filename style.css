@@ -1,0 +1,762 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.clr{
+    clear: both;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+
+/* section 1 */
+.header{
+    background-image: url(images/header.jpeg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color:  #333333;
+}
+.lists a{
+    color: white;
+}
+.logo a{
+    color: #D62F5B;
+} 
+.overlay-h{
+    background-color: rgba(0, 0, 0, 0.8);
+    height:100%;
+}
+.logo{
+    width: 30%;
+    padding: 18px  0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+}
+.logo,.lists{
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    padding: 18px ;
+}
+.lists{
+    float: right;
+    margin-right: 50px;
+}
+.list ul li{
+    list-style: none;
+
+}
+.list ul li a{
+    transition: all 0.5s ease-in-out; 
+}
+.list ul li :hover{
+    color: #ff3059d7;
+}
+.list{
+    display: inline-block;
+    padding: 0 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+.alex-smith{
+    text-align: center;
+    padding-top: 230px;
+}
+.alex-smith h3{
+    color: white;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+
+}
+.alex-smith h1{
+    color: RGB(255, 48, 91);
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    
+}
+.alex-smith h4{
+    color: white;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 26px;
+    font-weight: 300;
+}
+/* end section 1 */
+
+/* start About */
+
+
+.About{
+    padding: 50px 0 50px 50px ;
+}
+.movement{
+    position:relative;
+    left: 22px;
+    top: 20px;
+    overflow: hidden;
+}
+.img-about {
+    float: left;
+    margin-right: 50px;
+    border: 8px solid #555555;
+    border-radius: 5px;
+    position: relative;
+}
+
+.img-about img {
+    border-radius: 5px;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay2 {
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    left: 0;
+    top: 100%; 
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s ease-in-out; 
+}
+
+.img-about:hover .overlay2 {
+    opacity: 1;
+    top: 0; 
+}
+
+.inner-about {
+    position: relative;
+}
+
+.icons-img-about {
+    position: absolute;
+    left: 27%;
+    top: 50%;
+}
+
+.icons-img-about ul {
+    float: left;
+    list-style: none;
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+.icons-img-about ul li a {
+    color: white;
+}
+.icons-img-about :hover i{
+    color: #D62F5B;
+}
+
+
+.protofile-about {
+    float: left; 
+    width: 55%;
+    padding-left: 40px; 
+}
+.border{
+    border-bottom:1px dotted rgba(0, 0, 0, 0.5) ;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+.details-about ul {
+    float: left; 
+    width: 45%; 
+    margin: 10px 0;
+    list-style: none; 
+}
+.protofile-about h2{
+    margin: 15px 0;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 600;
+    font-size: 34px;
+    position: relative;
+    padding: 0 13px;
+}
+.protofile-about h2::after{
+    content: "";
+    background: #ff305b ;
+    height: 65%;
+    width: 4px;
+    position: absolute;
+    left: 0;
+    top: 5px; 
+}
+.details-about ul  li span{
+    color: black;
+    margin-right: 5px;
+}
+.protofile-about p,.details-about ul li,.button-about button{
+    line-height: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(0,0,0,0.5);
+}
+.button-about button{
+    background-color: #ff305b;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin: 0 10px 0 0;
+    transition: all 0.5s ease-in-out;
+}
+.button-about button a{
+    color: white;
+    
+}
+.button-about button:hover{
+    background-color: #EC2403;
+}
+.button-about button i{
+    padding-left: 5px;
+}
+.button-about{
+    padding: 30px 0;
+}
+
+/* end About */
+
+/* start Services */
+.Services{
+    padding: 50px 0  ;
+    background-color: #F1F1F1;
+}
+.head-service{
+    text-align: center;
+    padding: 0 0 50px 0;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    padding: 20px 0;
+    color: RGB(51, 51, 51);
+}
+.head-service h2{
+    position: relative;
+    padding: 20px 0;
+}
+.head-service h2::after{
+    content: "";
+    position: absolute;
+    margin: 0 auto;
+    left: 0; right: 0; bottom: 7px;
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 1px 0 0 0 ;
+    width: 200px;
+    height: 1px;
+    
+}
+.head-service h2::before{
+    content: "";
+    position: absolute;
+    left: 0; right: 0; bottom: 3px;
+    margin: 0 auto;
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 1px 0;
+    width: 80px;
+    padding: 4px 0 5px;
+}
+
+.kind-services {
+    padding: 50px 20px 50px 0;
+    float: left;
+    width: 25%;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+}
+.kind-services h3{
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+.kind-services p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color:  #555555;
+}
+.kind-services .inner1 {
+    background-color: transparent; 
+    padding: 50px 0;
+    position: relative;
+    transition: all 0.5s ease-in-out; 
+}
+
+.kind-services i {
+    color: #ff305b;
+    font-size: 30px;
+    padding: 0 0 30px 0;
+    transition: all 0.5s ease-in-out; 
+}
+
+
+.kind-services:hover .inner1 {
+    background-color: #FFFFFF; 
+}
+
+.kind-services:hover i {
+    transform: scale(1.3); 
+}
+
+/* end  Services*/
+
+/* start protofile */
+.our-protofile{
+    text-align: center;
+    padding: 50px 0;
+}
+.our-protofile h2{
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    padding: 20px 0;
+    color: RGB(51, 51, 51);
+    position: relative;
+}
+.our-protofile h2::after{
+    content: "";
+    position: absolute;
+    margin: 0 auto;
+    left: 0; right: 0; bottom: 7px;
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 1px 0 0 0 ;
+    width: 200px;
+    height: 1px;
+    
+}
+.our-protofile h2::before{
+    content: "";
+    position: absolute;
+    left: 0; right: 0; bottom: 3px;
+    margin: 0 auto;
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 1px 0;
+    width: 80px;
+    padding: 4px 0 5px;
+}
+
+.list-protofile{
+    padding: 30px 0 0 420px; 
+}
+.list-protofile ul{
+    float: left;
+    list-style: none;
+    padding: 0 20px 30px 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+.list-protofile ul li a{
+    color: #555555;
+}
+.proto-item{
+    width: 33.33%;
+    float: left;
+    padding: 20px;
+}
+.proto-item img{
+    width: 100%;  
+}
+.inner{
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease-in-out; 
+    opacity: 0;
+}
+.overlay i{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #FF305B;
+}
+.proto-item:hover .overlay{
+    opacity: 1;
+}
+/* end protofile */
+
+/* start details-sec5 */
+.details-sec5{
+    padding: 50px 0 50px  0px;
+    background-color: #F1F1F1;
+    text-align: center;
+    
+}
+.sec5{
+    float: left;
+    width: 25%;
+}
+.sec5 i{
+    color: #ff305b;
+    font-size: 30px;
+    padding: 10px 0 ;
+}
+.sec5 p{
+    padding: 10px 0;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+}
+.sec5 h5{
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+/* end details-sec5 */
+
+/* start feedback */
+.Feedback{
+    padding: 50px 0;
+}
+.head-feedback h2{
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    text-align: center;
+    padding: 20px 0;
+    color: RGB(51, 51, 51);
+    position: relative;
+    margin: 20px 0;
+}
+.head-feedback h2::after{
+    content: "";
+    position: absolute;
+    margin: 0 auto;
+    left: 0; right: 0; bottom: 7px;
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 1px 0 0 0 ;
+    width: 200px;
+    height: 1px;
+    
+}
+.head-feedback h2::before{
+    content: "";
+    position: absolute;
+    left: 0; right: 0; bottom: 3px;
+    margin: 0 auto;
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 1px 0;
+    width: 80px;
+    padding: 4px 0 5px;
+}
+.con-text-feedback{
+    width: 55%;
+    margin: 0 auto;
+    background-color: #F1F1F1;
+    border-radius: 5px;
+}
+.box-feedbak{
+    width: 0px;
+    height: 0px;
+    border-top:80px  solid #FF305B;
+    border-right:80px  solid  transparent;
+    border-bottom:80px  solid  transparent;
+    border-left:80px  solid  #FF305B;
+    position: relative;
+    padding:10px;
+}
+.img-feedback {
+    position: absolute;
+    top: -40px; 
+    left: -30px;
+}
+
+.img-feedback img {
+    width: 100px; 
+    border-radius: 50%;
+}
+.box-feedbak,.text-feedback{
+    float: left;
+}
+.text-feedback{
+    width: 55%;
+    padding: 20px 0px;
+}
+.text-feedback p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: RGB(85, 85, 85);
+    padding: 0 0 10px;
+}
+.text-feedback h3{
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    padding: 30px 0 10px;
+}
+.text-feedback h4{
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    padding:  0 0 10px;
+}
+.text-feedback h4 a{
+    color: RGB(119, 119, 119);
+}
+.text-feedback h4 a i{
+    padding: 0 5px;
+}
+.star-feedback i{
+    color: #F1C30D;
+    padding: 10px 0 30PX;
+}
+/* end feedback */
+
+
+/* start blog */
+.blog{
+    padding: 50px 0;
+    background-color: #F1F1F1;
+}
+.inner {
+    background-color: #FFFFFF;
+    width: 100%;
+}
+.head-blog h2{
+    padding: 0 0 20px 0;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    color: RGB(51, 51, 51);
+    text-align: center;
+    position: relative;
+}
+.head-blog h2::after{
+    content: "";
+    position: absolute;
+    margin: 0 auto;
+    left: 0; right: 0; bottom: 8px;
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 1px ;
+    width: 200px; 
+}
+.head-blog h2::before{
+    content: "";
+    position: absolute;
+    left: 0; right: 0; bottom: 3px;
+    margin: 0 auto;
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 1px 0;
+    width: 80px;
+    padding: 5px 0 5px;
+}
+.content-blog{
+    width: 33%;
+    float: left;
+    padding: 30px 20px;
+}
+.content-blog img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+.content-blog iframe{
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+}
+.content-blog .head-cont-blog{
+    padding: 10px 0;
+    color: RGB(85, 85, 85);
+}
+.content-blog .date-blog{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+.head-cont-blog h3{
+    padding: 8px 0;
+}
+.head-cont-blog p{
+    padding: 8px 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+.head-cont-blog h3 a{
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: black;
+}
+.head-cont-blog p{
+    color: RGB(85, 85, 85);
+}
+.read-blog{
+    padding: 10px 0 ;
+}
+.read-blog a{
+    color: RGB(85, 85, 85);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+.text-blog{
+    padding: 10px 20px;
+}
+/* end blog */
+
+
+/* start contact */
+
+.contact{
+    padding:50px 0 ;
+}
+.header-contact h2{
+    text-align: center;
+    padding: 0 0 50px 0;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    padding: 20px 0;
+    color: RGB(51, 51, 51);
+    position: relative;
+}
+.header-contact h2::after{
+    content: "";
+    position: absolute;
+    margin: 0 auto;
+    left: 0; right: 0; bottom: 7px;
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 1px 0 0 0 ;
+    width: 200px;
+    height: 1px;
+    
+}
+.header-contact h2::before{
+    content: "";
+    position: absolute;
+    left: 0; right: 0; bottom: 3px;
+    margin: 0 auto;
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 1px 0;
+    width: 80px;
+    padding: 4px 0 5px;
+}
+.forms{
+    padding: 30px 0 0 230px;
+}
+.f-name,.email{
+    float: left;
+    padding: 0 20px 40px 0 ;
+}
+.f-name input,.email input{
+    width: 360px;
+    height: 50px;
+    padding: 0 0 0 10px;
+    border: 2px solid #5555558d;
+    border-radius: 5px;
+}
+.help-f-name,.help-email,
+.help-subject,.help-textarea{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+.help-f-name ul li,.help-email ul li,
+.help-subject ul li,.help-textarea ul li{
+    list-style: none;
+    padding: 5px 0;
+    color:#A94442 ;
+}
+.subject{
+    padding: 0 0 40px 0 ;
+}
+.subject input{
+    width: 740px;
+    height: 50px;
+    padding: 0 0 0 10px;
+    border: 2px solid #5555558d;
+    border-radius: 5px;
+}
+.text-area{
+    padding: 0 0 40px 0 ;
+}
+.text-area textarea{
+    border: 2px solid #5555558d;
+    border-radius: 5px;
+    padding: 10px 0 0 10px;
+    resize: none;
+}
+.f-name input::placeholder,
+.email input::placeholder,
+.subject input::placeholder,
+.text-area textarea::placeholder{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+.btn-form button{
+    background-color: #FF305B;
+    color: white;
+    padding: 12px 15px;
+    border-radius: 5px;
+    border: none;
+}
+/* end contact */
+
+/* start footer */
+.footer{
+    padding: 50px 0;
+    background-color: #333333;
+    text-align: center;
+}
+.icons-footer{
+    margin-bottom: 10px;
+}
+
+.icons-footer i{
+    font-size: 20px;
+    color: white;
+    padding: 8px;
+}
+.text-footer{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+}
+.text-footer a{
+    color: #D13333;
+}
+/* end footer */
